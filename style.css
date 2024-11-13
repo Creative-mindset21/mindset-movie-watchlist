@@ -20,6 +20,7 @@
   --color-white-light: #edf6f9;
   --color-orange: #fca311;
   --color-black: #000;
+  --bg-color: ;
 }
 
 /* ?GENERAL CSS */
@@ -52,7 +53,7 @@ img {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 /* ?HEADER SECTION */
@@ -137,10 +138,16 @@ main {
   display: flex;
   gap: 1rem;
   align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-black);
+}
+
+.box:last-child {
+  border: 0;
 }
 
 .main-image {
-  width: 100px;
+  width: 150px;
 }
 
 .texts {
@@ -154,6 +161,10 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.text-header small {
+  font-size: 0.9rem;
 }
 
 .text-header .ratings {
