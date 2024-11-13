@@ -73,7 +73,18 @@ p {
   color: var(--color-orange);
 }
 
-.header-section > a:hover {
+.header-section div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-section div i {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.header-section div > a:hover {
   text-decoration: underline;
 }
 
