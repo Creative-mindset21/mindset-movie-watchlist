@@ -2,12 +2,14 @@ const searchBtn = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-input");
 const mainSectionEl = document.getElementById("main-section");
 const startExploring = document.getElementById("start-exploring");
+const errorMessageEl = document.getElementById("error-message");
 
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const searchValue = searchInput.value;
   mainSectionEl.innerHTML = "";
   startExploring.style.display = "none";
+  errorMessageEl.style.display = "none";
   generateMovieDetails(searchValue);
   searchInput.value = "";
 });
@@ -23,7 +25,7 @@ function generateMovieDetails(searchedMovie) {
             getIdmbID(movie.imdbID);
           });
         } else {
-          console.log();
+          errorMessageEl.style.display = "block";
         }
       });
   } catch (err) {
