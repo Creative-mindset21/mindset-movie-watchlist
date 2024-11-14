@@ -125,6 +125,28 @@ p {
   font-size: 0.9rem;
 }
 
+/* ? START EXPLORING SECTION */
+.start-exploring {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #e5e5e5;
+  z-index: -1;
+}
+
+.start-exploring i {
+  font-size: 15rem;
+}
+
+.start-exploring h3 {
+  font-size: 4rem;
+}
+
 /* ?MOVIE DISPLAY SECTION */
 main {
   margin-top: 3%;
