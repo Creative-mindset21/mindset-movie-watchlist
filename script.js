@@ -3,15 +3,19 @@ const searchInput = document.getElementById("search-input");
 const mainSectionEl = document.getElementById("main-section");
 const startExploring = document.getElementById("start-exploring");
 const errorMessageEl = document.getElementById("error-message");
+const themeBtnEl = document.getElementById("theme-btn");
+const bodyEl = document.querySelector("body");
 
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const searchValue = searchInput.value;
   mainSectionEl.innerHTML = "";
+  searchInput.value = "";
+
   startExploring.style.display = "none";
   errorMessageEl.style.display = "none";
+
   generateMovieDetails(searchValue);
-  searchInput.value = "";
 });
 
 // ? GENERATE THE MOVIES BY SEARCH
@@ -104,3 +108,8 @@ function displayMovies(movies) {
             </div>
     `;
 }
+
+// ? CHANGE THE THEME OF THE WEBSITE
+themeBtnEl.addEventListener("click", () => {
+  bodyEl.classList.toggle("dark");
+});

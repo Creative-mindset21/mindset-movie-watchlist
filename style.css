@@ -24,6 +24,11 @@
   --color-grey: #d1d0d0;
 }
 
+body.dark {
+  --color-white: #2b2d42;
+  --color-black: #fff;
+}
+
 /* ?GENERAL CSS */
 body {
   width: 100%;
@@ -38,6 +43,7 @@ body {
   flex-direction: column;
   position: relative;
   background: var(--color-white);
+  transition: all 0.3s ease;
 }
 
 a {
@@ -47,11 +53,13 @@ a {
 
 button {
   cursor: pointer;
+  background: none;
 }
 
 img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 p {
@@ -79,12 +87,13 @@ p {
 .header-section div {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .header-section div i {
   font-size: 1.3rem;
   cursor: pointer;
+  color: #fff;
 }
 
 .header-section div > a:hover {
@@ -110,12 +119,15 @@ p {
 .search-section i {
   font-size: 1.1rem;
   padding-left: 1rem;
+  color: var(--color-black);
 }
 
 .search-section input[type="search"] {
   width: 100%;
   font-size: 1rem;
   color: var(--color-black);
+  background-color: var(--color-white);
+  padding: 0.5rem 0;
 }
 
 .search-btn {
@@ -179,6 +191,7 @@ main {
   align-items: center;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--color-black);
+  color: var(--color-black);
 }
 
 .box:last-child {
@@ -187,6 +200,10 @@ main {
 
 .main-image {
   width: 150px;
+}
+
+.main-image img {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9);
 }
 
 .texts {
