@@ -20,7 +20,8 @@
   --color-white-light: #edf6f9;
   --color-orange: #fca311;
   --color-black: #000;
-  --bg-color: ;
+  --bg-color: #edf2f4;
+  --color-grey: #e5e5e5;
 }
 
 /* ?GENERAL CSS */
@@ -36,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  background: var(--color-white);
 }
 
 a {
@@ -135,8 +137,8 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  color: #e5e5e5;
-  z-index: -1;
+  color: var(--color-grey);
+  z-index: 0;
 }
 
 .start-exploring i {
@@ -145,6 +147,21 @@ p {
 
 .start-exploring h3 {
   font-size: 4rem;
+}
+
+/* ? ERROR MESSAGE SECTION */
+.error-message {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-grey);
+  z-index: 0;
+  display: none;
+}
+
+.error-message h3 {
+  font-size: 2rem;
 }
 
 /* ?MOVIE DISPLAY SECTION */
