@@ -112,4 +112,22 @@ function displayMovies(movies) {
 // ? CHANGE THE THEME OF THE WEBSITE
 themeBtnEl.addEventListener("click", () => {
   bodyEl.classList.toggle("dark");
+
+  if (bodyEl.classList.contains("dark")) {
+    themeBtnEl.innerHTML = `<i class="bx bxs-sun"></i>`;
+    localStorage.setItem("currentTheme", "dark");
+  } else {
+    themeBtnEl.innerHTML = `<i class="bx bxs-moon"></i>`;
+    localStorage.setItem("currentTheme", "light");
+  }
 });
+
+bodyEl.className = localStorage.getItem("currentTheme");
+
+if (bodyEl.classList.contains("dark")) {
+  themeBtnEl.innerHTML = `<i class="bx bxs-sun"></i>`;
+  localStorage.setItem("currentTheme", "dark");
+} else {
+  themeBtnEl.innerHTML = `<i class="bx bxs-moon"></i>`;
+  localStorage.setItem("currentTheme", "light");
+}
