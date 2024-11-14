@@ -21,7 +21,7 @@ searchBtn.addEventListener("click", (e) => {
 // ? GENERATE THE MOVIES BY SEARCH
 function generateMovieDetails(searchedMovie) {
   try {
-    fetch(`http://www.omdbapi.com/?apikey=2e18f3c6&s=${searchedMovie}`)
+    fetch(`https://www.omdbapi.com/?apikey=2e18f3c6&s=${searchedMovie}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.Response === "True") {
@@ -40,7 +40,7 @@ function generateMovieDetails(searchedMovie) {
 // ? GET THE DETAILS OF THE MOVIE WITH THEIR IDMBID
 function getIdmbID(idmbId) {
   try {
-    fetch(`http://www.omdbapi.com/?apikey=2e18f3c6&i=${idmbId}`)
+    fetch(`https://www.omdbapi.com/?apikey=2e18f3c6&i=${idmbId}`)
       .then((res) => res.json())
       .then((data) => {
         displayMovies(data);
