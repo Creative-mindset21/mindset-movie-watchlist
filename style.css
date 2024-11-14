@@ -126,7 +126,7 @@ p {
   width: 100%;
   font-size: 1rem;
   color: var(--color-black);
-  background-color: var(--color-white);
+  background-color: transparent;
   padding: 0.5rem 0;
 }
 
@@ -247,4 +247,83 @@ main {
 
 .text-plot {
   max-width: 750px;
+}
+
+@media (max-width: 699px) {
+  /* ! GENERAL CSS */
+  a {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  small {
+    font-size: 0.7rem;
+  }
+
+  /* ! HEADER SECTION CSS */
+  .header-section {
+    height: 7rem;
+  }
+
+  .header-section h1 a {
+    font-size: 1.5rem;
+  }
+
+  .header-section div {
+    gap: 0.5rem;
+  }
+
+  .header-section div i {
+    font-size: 0.9rem;
+  }
+
+  /* ! SEARCH SECTION */
+  .search-section {
+    width: 20rem;
+    top: 8rem;
+    height: 2.5rem;
+  }
+
+  /* ! START EXPLORING SECTION */
+  .start-exploring i {
+    font-size: 10rem;
+  }
+
+  .start-exploring h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* ! ERROR MESSAGE SECTION */
+  .error-message h3 {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+    margin-top: 15%;
+    gap: 0.5rem;
+  }
+
+  .main-image {
+    width: 120px;
+  }
+
+  .box {
+    flex-direction: column;
+    margin: 1rem 2rem;
+    align-items: flex-start;
+  }
+
+  .watchlist h4 {
+    font-size: 0.8rem;
+  }
 }
