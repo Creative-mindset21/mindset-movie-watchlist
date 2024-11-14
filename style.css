@@ -277,7 +277,7 @@ main {
   }
 
   .header-section div {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .header-section div i {
@@ -308,6 +308,7 @@ main {
     text-align: center;
   }
 
+  /* !MOVIE DISPLAY SECTION */
   main {
     margin-top: 15%;
     gap: 0.5rem;
