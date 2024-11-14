@@ -137,6 +137,8 @@ p {
   border-radius: 0 5px 5px 0;
   background: #f4f3ee;
   font-size: 0.9rem;
+  color: #000;
+  font-weight: 500;
 }
 
 /* ? START EXPLORING SECTION */
