@@ -110,7 +110,7 @@ function addToWatchlist(
 ) {
   const watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
 
-  //! Check if the movie is already in the watchlist
+  // Check if the movie is already in the watchlist
   if (!watchlist.some((movie) => movie.imdbID === imdbID)) {
     watchlist.push({
       imdbID,
