@@ -15,6 +15,9 @@
     <!-- !GENERAL CSS LINKING -->
     <link rel="stylesheet" href="../style.css" />
 
+    <!-- !CUSTOM CSS LINKING -->
+    <link rel="stylesheet" href="./watchlist.css" />
+
     <!-- !BOXICONS LINKING -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -43,13 +46,20 @@
       </header>
 
       <!-- ! ERROR MESSAGE -->
-      <section class="error-message" id="error-message">
-        <h3>
-          Unable to find what you're looking for . Please try another search
-        </h3>
+      <section class="display-message" id="display-message">
+        <h3>Your watchlist is empty...</h3>
+
+        <a href="../index.html">
+          <i class="bx bxs-plus-circle"></i>
+          Add movies!
+        </a>
       </section>
     </div>
 
+    <!-- ! GENERAL JS LINKING -->
     <script src="../script.js"></script>
+
+    <!-- ! CUSTOM JS LINKING -->
+    <script src="./watchlist.js"></script>
   </body>
 </html>
