@@ -13,7 +13,7 @@
     <meta name="description" content="A movie Watchlist using ODMB APIs" />
 
     <!-- !GENERAL CSS LINKING -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 
     <!-- !BOXICONS LINKING -->
     <link
@@ -22,7 +22,7 @@
     />
 
     <!-- !CUSTOM FAVICON LINKING -->
-    <link rel="icon" href="./imgs/favicon.png" />
+    <link rel="icon" href="../imgs/favicon.png" />
 
     <!-- !TITLE -->
     <title>Mindset Cinemas</title>
@@ -35,29 +35,12 @@
           <a href="index.html">MindSet <span>Cinema</span></a>
         </h1>
         <div>
-          <a href="./watchlist/watchlist.html">My Watchlist</a>
+          <a href="../index.html">Search for Movies</a>
           <button id="theme-btn">
             <i class="bx bxs-moon"></i>
           </button>
         </div>
       </header>
-
-      <!-- !SEARCH SECTION -->
-      <section class="search-section">
-        <i class="bx bx-search-alt"></i>
-        <input
-          type="search"
-          placeholder="Search for movies"
-          id="search-input"
-        />
-        <button type="submit" id="search-btn" class="search-btn">Search</button>
-      </section>
-
-      <!-- ! START EXPLORING DISPLAY -->
-      <section class="start-exploring" id="start-exploring">
-        <i class="bx bx-movie"></i>
-        <h3>Start Exploring</h3>
-      </section>
 
       <!-- ! ERROR MESSAGE -->
       <section class="error-message" id="error-message">
@@ -65,12 +48,8 @@
           Unable to find what you're looking for . Please try another search
         </h3>
       </section>
-
-      <!-- !MOVIE DISPLAY SECTION -->
-      <main id="main-section"></main>
     </div>
 
-    <!-- !CUSTOM JS LINKING -->
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

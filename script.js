@@ -6,6 +6,25 @@ const errorMessageEl = document.getElementById("error-message");
 const themeBtnEl = document.getElementById("theme-btn");
 const bodyEl = document.querySelector("body");
 
+// ? CHANGE THE THEME OF THE WEBSITE
+themeBtnEl.addEventListener("click", () => {
+  bodyEl.classList.toggle("dark");
+
+  if (bodyEl.classList.contains("dark")) {
+    themeBtnEl.innerHTML = `<i class="bx bxs-sun"></i>`;
+    localStorage.setItem("currentTheme", "dark");
+  } else {
+    themeBtnEl.innerHTML = `<i class="bx bxs-moon"></i>`;
+    localStorage.setItem("currentTheme", "light");
+  }
+});
+
+// Load theme from localStorage
+bodyEl.className = localStorage.getItem("currentTheme") || "light";
+themeBtnEl.innerHTML = bodyEl.classList.contains("dark")
+  ? `<i class="bx bxs-sun"></i>`
+  : `<i class="bx bxs-moon"></i>`;
+
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const searchValue = searchInput.value;
@@ -128,22 +147,3 @@ function addToWatchlist(
     alert(`${title} is already in your watchlist!`);
   }
 }
-
-// ? CHANGE THE THEME OF THE WEBSITE
-themeBtnEl.addEventListener("click", () => {
-  bodyEl.classList.toggle("dark");
-
-  if (bodyEl.classList.contains("dark")) {
-    themeBtnEl.innerHTML = `<i class="bx bxs-sun"></i>`;
-    localStorage.setItem("currentTheme", "dark");
-  } else {
-    themeBtnEl.innerHTML = `<i class="bx bxs-moon"></i>`;
-    localStorage.setItem("currentTheme", "light");
-  }
-});
-
-// Load theme from localStorage
-bodyEl.className = localStorage.getItem("currentTheme") || "light";
-themeBtnEl.innerHTML = bodyEl.classList.contains("dark")
-  ? `<i class="bx bxs-sun"></i>`
-  : `<i class="bx bxs-moon"></i>`;
