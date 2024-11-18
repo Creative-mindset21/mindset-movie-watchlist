@@ -147,3 +147,5 @@ function addToWatchlist(
     alert(`${title} is already in your watchlist!`);
   }
 }
+
+//localStorage.removeItem("watchlist");
