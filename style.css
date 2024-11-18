@@ -194,7 +194,8 @@ main {
 .box {
   display: flex;
   gap: 1rem;
-  align-items: stretch;
+  align-items: center;
+
   padding-bottom: 10px;
   border-bottom: 1px solid var(--color-black);
   color: var(--color-black);
@@ -321,6 +322,7 @@ main {
   main {
     margin-top: 15%;
     gap: 0.5rem;
+    width: 80%;
   }
 
   .main-image {
@@ -329,8 +331,12 @@ main {
 
   .box {
     flex-direction: column;
-    margin: 1rem 2rem;
+    margin-top: 5%;
     align-items: flex-start;
+  }
+
+  .box:last-child {
+    margin-bottom: 1rem;
   }
 
   .watchlist h4 {

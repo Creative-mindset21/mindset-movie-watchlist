@@ -14,3 +14,10 @@
 .display-message a {
   font-size: 1.5rem;
 }
+
+@media (max-width: 699px) {
+  /* !MOVIE DISPLAY SECTION */
+  main {
+    margin-top: 0%;
+  }
+}
